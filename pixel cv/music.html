@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Music</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="music favicon.png">
+  <style>
+    body {
+      background: linear-gradient(135deg, #add8e6, #87cefa, #e0ffff);
+      font-family: 'Courier New', monospace;
+      padding: 2rem;
+    }
+
+    .music-page {
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      border: 4px solid black;
+      border-radius: 10px;
+      padding: 1.5rem;
+      box-shadow: 5px 5px 0px #000;
+    }
+
+    .music-header {
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+
+    .music-content {
+      background-color: #f0f8ff;
+      border: 2px solid #000;
+      border-radius: 10px;
+      padding: 1rem;
+    }
+
+    .music-content p {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+    }
+
+    iframe {
+      border-radius: 10px;
+      width: 100%;
+      height: 80px;
+      border: none;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 1.5rem;
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+      border: 2px solid black;
+      padding: 0.5rem 1rem;
+      background-color: #e6f0ff;
+      border-radius: 8px;
+      box-shadow: 2px 2px 0px black;
+    }
+
+    .back-link:hover {
+      background-color: #d6eaff;
+    }
+    .fav-artists {
+  margin-top: 1.5rem;
+}
+
+.artist-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.artist-card {
+  text-align: center;
+  border: 2px solid #000;
+  padding: 0.5rem;
+  border-radius: 10px;
+  background-color: #fffafc;
+  box-shadow: 2px 2px 0 black;
+  text-decoration: none;
+  color: black;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.artist-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 4px 4px 0 black;
+  background-color: #f0f8ff;
+}
+
+.artist-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.artist-card p {
+  margin-top: 0.5rem;
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+  </style>
+</head>
+<body>
+  <div class="music-page">
+    <div class="music-header">🎵 MY MUSIC</div>
+    <div class="music-content">
+      <p>I enjoy different genres like chillwave, rap, lo-fi and EDM. Music keeps me focused while coding and boosts my creativity.</p>
+
+      <!-- Embed "You Right" by Doja Cat -->
+      
+        <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/5ac33QuPh8CLdaCNxfGKhu?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+      <p>Sometimes I make my own beats or share tracks I find cool with friends.</p>
+    </div>
+<div class="fav-artists">
+  <h3>🎤 Favorite Artists</h3>
+  <div class="artist-grid">
+    <a href="https://open.spotify.com/artist/5cj0lLjcoR7YOSnhnX0Po5" target="_blank" class="artist-card">
+      <img src="Doja Cat.jpg" alt="Doja Cat">
+      <p>Doja Cat</p>
+    </a>
+    <a href="https://open.spotify.com/artist/1Xyo4u8uXC1ZmMpatF05PJ" target="_blank" class="artist-card">
+      <img src="The Weeknd.jpg" alt="The Weeknd">
+      <p>The Weeknd</p>
+    </a>
+    <a href="https://open.spotify.com/artist/00FQb4jTyendYWaN8pK0wa" target="_blank" class="artist-card">
+      <img src="Lana Del Rey.jpg" alt="Lana Del Rey">
+      <p>Lana Del Rey</p>
+    </a>
+    <a href="https://open.spotify.com/artist/6qqNVTkY8uBg9cP3Jd7DAH" target="_blank" class="artist-card">
+      <img src="Billie Eilish.jpg" alt="Billie Eilish">
+      <p>Billie Eilish</p>
+    </a>
+    <a href="https://open.spotify.com/artist/7tYKF4w9nC0nq9CsPZTHyP" target="_blank" class="artist-card">
+      <img src="SZA.jpg" alt="SZA">
+      <p>SZA</p>
+    </a>
+    <a href="https://open.spotify.com/artist/66CXWjxzNUsdJxJ2JdwvnR" target="_blank" class="artist-card">
+      <img src="Ariana Grande.jpg" alt="Ariana Grande">
+      <p>Ariana Grande</p>
+    </a>
+  </div>
+</div>
+
+
+    <a href="index.html" class="back-link">⬅ Back to Resume</a>
+  </div>
+</body>
+</html>
